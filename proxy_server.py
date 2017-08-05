@@ -124,7 +124,8 @@ class Server:
 
     def shutdown(self):
         log('warning', 'Shutting down')
-        main_thread = threading.currentThread()  # Wait all client to exit
+        # close all threads
+        main_thread = threading.currentThread()
         for t in threading.enumerate():
             if t is main_thread:
                 continue
