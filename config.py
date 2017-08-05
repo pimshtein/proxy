@@ -13,12 +13,12 @@ ip_allowed = ['127.0.0.1']
 # is log enabled?
 log_on = 0
 # path to log
-log_file = 'log'
+log_file = '/var/log/proxy.log'
 # format log text. Message is required
 log_formatter = '%(asctime)s %(levelname)s %(message)s'
-# max size on log file
+# max size on log file (default 5 Mb)
 max_bytes = 5 * 1024 * 1024
 # how many log files rotate on disk
-backup_count = 5
+backup_count = 3
 # date time format to log
 date_fmt = '%d.%m.%Y %H:%M:%S'
