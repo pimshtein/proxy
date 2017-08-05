@@ -1,7 +1,7 @@
 host = '127.0.0.1'
 port = 2323
 max_request_length = 5 * 1024 * 1024
-connection_timeout = 120
+connection_timeout = 3 * 60
 ip_allowed = ['127.0.0.1']
 
 log_on = 0
