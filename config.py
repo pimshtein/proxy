@@ -10,5 +10,3 @@ log_formatter = '%(asctime)s %(levelname)s %(message)s'
 max_bytes = 5 * 1024 * 1024
 backup_count = 5
 date_fmt = '%d.%m.%Y %H:%M:%S'
-
-
