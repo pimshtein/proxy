@@ -35,7 +35,6 @@ app_log.addHandler(my_handler)
 def log(method, message):
     reload(config)
     if config.log_on:
-        # call_function = "app_log.%s" % method + "(" + message + ")"
         call_function = getattr(app_log, method)
         call_function(message)
 
